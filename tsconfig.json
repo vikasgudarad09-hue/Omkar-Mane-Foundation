@@ -17,10 +17,18 @@
     "jsx": "react-jsx",
     "paths": {
       "@/*": [
-        "./*"
+        "./src/*"
       ]
     },
     "allowImportingTsExtensions": true,
-    "noEmit": true
-  }
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": [
+    "src",
+    "vite.config.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
